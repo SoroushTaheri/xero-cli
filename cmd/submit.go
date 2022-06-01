@@ -15,8 +15,8 @@ import (
 // submitCmd represents the submit command
 var submitCmd = &cobra.Command{
 	Use:   "submit",
-	Short: "",
-	Long:  ``,
+	Short: "Here you will submit the flag you earned",
+	Long:  `Here you will submit the flag you earned.`,
 	Run:   submit,
 	Args:  cobra.ExactArgs(2),
 }

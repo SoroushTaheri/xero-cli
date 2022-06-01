@@ -15,8 +15,8 @@ import (
 var scoreboardCmd = &cobra.Command{
 	Use:     "scoreboard",
 	Aliases: []string{"sb"},
-	Short:   "",
-	Long:    ``,
+	Short:   "Show the scoreboard of the competition",
+	Long:    `Show the scoreboard of the competition.`,
 	Args:    cobra.ExactArgs(1),
 	Run:     showScoreboard,
 }

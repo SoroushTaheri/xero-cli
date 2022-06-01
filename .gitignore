@@ -5,6 +5,8 @@
 *.so
 *.dylib
 
+xero-cli
+
 # Test binary, built with `go test -c`
 *.test
 
