@@ -29,5 +29,6 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         goos: ${{ matrix.goos }}
         goarch: ${{ matrix.goarch }}
+        goversion: https://dl.google.com/go/go1.18.3.linux-amd64.tar.gz
         build_flags: -v
         binary_name: "${{ env.BINARY_NAME }}"
