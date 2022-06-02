@@ -11,13 +11,11 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// loginCmd represents the login command
 var loginCmd = &cobra.Command{
 	Use:   "login",
 	Short: "Login using your RoboEpics credentials",
 	Long:  `Login using your RoboEpics credentials to be able to execute protected/user-based commands. (submissions, challenge descriptions etc.)`,
 	Run:   login,
-	// Args:  cobra.ExactArgs(2),
 }
 
 func init() {

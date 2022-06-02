@@ -10,7 +10,6 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// rulesCmd represents the rules command
 var rulesCmd = &cobra.Command{
 	Use:   "rules",
 	Short: "View CTF rules",

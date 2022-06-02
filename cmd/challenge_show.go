@@ -13,7 +13,6 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// showCmd represents the show command
 var showCmd = &cobra.Command{
 	Use:   "show",
 	Short: "Show details of a challenge",
@@ -60,8 +59,6 @@ func show(cmd *cobra.Command, args []string) {
 
 	pterm.DefaultHeader.Println(response.Title)
 	fmt.Println()
-	// s, _ := pterm.DefaultBigText.WithLetters(pterm.NewLettersFromString(response.Title)).Srender()
-	// pterm.Println(s)
 
 	for _, text := range texts {
 		pterm.DefaultSection.Println(text.Title)

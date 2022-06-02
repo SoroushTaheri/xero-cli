@@ -8,7 +8,6 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// challengeCmd represents the challenge command
 var challengeCmd = &cobra.Command{
 	Use:     "challenge",
 	Aliases: []string{"ch"},

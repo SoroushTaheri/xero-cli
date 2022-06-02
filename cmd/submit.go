@@ -12,7 +12,6 @@ import (
 	"xero-cli/pkg/paricheh"
 )
 
-// submitCmd represents the submit command
 var submitCmd = &cobra.Command{
 	Use:   "submit",
 	Short: "Here you will submit the flag you earned",

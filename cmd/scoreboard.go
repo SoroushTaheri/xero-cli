@@ -12,7 +12,6 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// scoreboardCmd represents the scoreboard command
 var scoreboardCmd = &cobra.Command{
 	Use:     "scoreboard",
 	Aliases: []string{"sb"},
