@@ -6,6 +6,7 @@ package cmd
 
 import (
 	"fmt"
+	"time"
 
 	"github.com/pterm/pterm"
 	"github.com/spf13/cobra"
@@ -54,7 +55,11 @@ func showScoreboard(cmd *cobra.Command, args []string) {
 			teamName = "[TEAM] " + teamName
 		}
 
-		tableRows = append(tableRows, []string{fmt.Sprint((page-1)*limit + (index + 1)), teamName, fmt.Sprint(row.Score), fmt.Sprint(len(row.SubmissionDates)), row.LastSubmission})
+		inputLayout := "2006-01-02T15:04:05.000000Z"
+		exportLayout := "2006-01-02 15:04:05"
+		lastSubmission, _ := time.Parse(inputLayout, row.LastSubmission)
+
+		tableRows = append(tableRows, []string{fmt.Sprint((page-1)*limit + (index + 1)), teamName, fmt.Sprint(row.Score), fmt.Sprint(len(row.SubmissionDates)), lastSubmission.Format(exportLayout)})
 	}
 
 	pterm.DefaultHeader.Println("Scoreboard")
