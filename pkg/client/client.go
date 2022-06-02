@@ -311,7 +311,7 @@ type CompetitionRetrieveResponse struct {
 	TotalParticipants int      `json:"total_participants"`
 	TotalSubmissions  int      `json:"total_submissions"`
 	Status            int      `json:"status"`
-	ParticipantID     string   `json:"participant_id"`
+	ParticipantID     int      `json:"participant_id"`
 	Tags              []string `json:"tags"`
 	Title             string   `json:"title"`
 	Subtitle          string   `json:"subtitle"`
