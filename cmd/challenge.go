@@ -14,8 +14,8 @@ import (
 var challengeCmd = &cobra.Command{
 	Use:     "challenge",
 	Aliases: []string{"ch"},
-	Short:   "",
-	Long:    ``,
+	Short:   "Get the full list of challenges or view details of a challenge",
+	Long:    `Get the full list of challenges or view details of a challenge`,
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("challenge called")
 	},
