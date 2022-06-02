@@ -20,6 +20,7 @@ Table of content:
   - [submit](#submit)
   - [scoreboard](#scoreboard)
   - [rules](#rules)
+  - [support](#support)
   - [completion](#completion)
 - [License](#license)
 - [Contact](#contact)
@@ -167,6 +168,9 @@ Shows specified rules by the organizers.
 ```
 $ xero rules
 ```
+
+## support
+Get the invite link to our XeroCTF Discord server.
 
 ## completion
 Generates the autocompletion script for the specified shell.
