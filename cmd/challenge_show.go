@@ -6,6 +6,7 @@ package cmd
 
 import (
 	"fmt"
+	"strings"
 
 	roboepicsClient "xero-cli/pkg/client"
 
@@ -62,6 +63,9 @@ func show(cmd *cobra.Command, args []string) {
 
 	for _, text := range texts {
 		pterm.DefaultSection.Println(text.Title)
-		pterm.DefaultParagraph.WithMaxWidth(50).Println(text.Text)
+		for _, p := range strings.Split(text.Text, "\n\n") {
+			pterm.DefaultParagraph.WithMaxWidth(150).Println(p)
+			fmt.Printf("\n")
+		}
 	}
 }
