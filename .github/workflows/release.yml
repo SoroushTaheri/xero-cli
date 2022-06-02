@@ -1,0 +1,33 @@
+name: Release Go Binaries
+
+on:
+  release:
+    types: [created]
+
+
+env:
+  BINARY_NAME: xero
+
+
+jobs:
+  releases-matrix:
+    name: Release Go Binaries
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        goos: [linux, windows, darwin]
+        goarch: ["386", amd64, arm64]
+        exclude:
+          - goarch: "386"
+            goos: darwin
+          - goarch: arm64
+            goos: windows
+    steps:
+    - uses: actions/checkout@v2
+    - uses: wangyoucao577/go-release-action@v1.3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        goos: ${{ matrix.goos }}
+        goarch: ${{ matrix.goarch }}
+        build_flags: -v
+        binary_name: "${{ env.BINARY_NAME }}"
