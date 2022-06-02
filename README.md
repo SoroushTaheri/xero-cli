@@ -40,7 +40,7 @@ Make sure to always use the latest version of the project. Otherwise you might e
 **Step 2)** The archive only includes a single file which represents the `xero-cli` binary. You'll need to extract the archive and move the binary to a suitable directory such as `usr/local/bin`:
 
 ```
-$ wget -qO- "https://github.com/SoroushTaheri/xero-cli/releases/download/v0.1.3/xero-v0.1.3-linux-amd64.tar.gz" | sudo tar xvz -C /usr/local/bin
+$ wget -qO- "https://github.com/SoroushTaheri/xero-cli/releases/download/v0.1.4/xero-v0.1.4-linux-amd64.tar.gz" | sudo tar xvz -C /usr/local/bin
 ```
 
 You should be able to use the CLI in your shell. Do so by executing `xero` command:
