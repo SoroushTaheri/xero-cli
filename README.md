@@ -144,10 +144,11 @@ Note that we used the challenge's identifier (`rsa`) and not its title (`Ugupugu
 Use this command to submit a flag you've captured!
 You need to pass **challenge identifier** and **your flag** as arguments.
 
-In the following example, we'll submit the flag `asc309vlk3m2lvpo` for the `Ugupugu` challenge:
+In the following example, we'll submit the flag `xeroctf{asc309vlk3m2lvpo}` for the `Ugupugu` challenge:
 ```
-$ xero submit rsa asc309vlk3m2lvpo
+$ xero submit rsa xeroctf{asc309vlk3m2lvpo}
 ```
+Please note that every flag in XeroCTF competitions has the format: **xeroctf{xxxxxx}**
 
 ## scoreboard
 View the scoreboard for a particular challenge.
